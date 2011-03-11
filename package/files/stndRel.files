@@ -1,0 +1,13 @@
+#
+#	stndRel.files - Release Files needed for the binary installation 
+#
+#	Copyright (c) Embedthis Software LLC, 2003-2011. All Rights Reserved.
+#
+
+cpx -p -d doc/product "*.TXT" "${BLD_PREFIX}"
+cpx -d doc/licenses "*.TXT" "${BLD_PREFIX}"
+cpx -p package/remove.sh "${BLD_LIB_PREFIX}/remove"
+
+if [ $BLD_HOST_OS = WIN ] ; then
+    cpx build/bin/removeFiles* ${BLD_PREFIX}/bin
+fi

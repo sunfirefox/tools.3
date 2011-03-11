@@ -1,0 +1,108 @@
+#!/bin/bash
+#
+#   standard.defaults -- Default configuration settings when building from source.
+#
+#   Copyright (c) Embedthis Software LLC, 2003-2011. All Rights Reserved.
+#
+#   These defaults build a normal GPL release. It is multi-threaded, 
+#   dynamically linked with the ability to load modules. 
+#
+#   These initial defaults are read by configure when first creating the
+#   configuration files: buildConfig.make, buildConfig.sh and buildConfig.h
+#
+
+###############################################################################
+#
+#   Primary Configuration Section
+#
+
+BLD_TYPE="DEBUG"                        # The build type: (DEBUG), (RELEASE)
+BLD_TUNE="MPR_TUNE_BALANCED" 			# The tune type: (SIZE), (BALANCED), (SPEED)
+BLD_DEFAULTS="standard"                 # Name of this defaults file
+BLD_PACKAGES=""                         # List of external packages
+BLD_DEBUG=1                             # Set to 1 if DEBUG
+BLD_CLEAN_INSTALL=0                     # Overwrite existing installations
+BLD_LICENSE=gpl
+BLD_COMMERCIAL=0
+
+#
+#   Include settings common to all configurations
+#
+. ${BLD_TOP}/build/product.config
+
+###############################################################################
+#
+#   Components (order matters: SDKs first, optional last)
+#
+with --os=win winsdk
+with --build --os=wince winsdk
+with --os=wince wince
+with --os=vxworks vxworks
+
+with cc ar make nm
+with --os=linux ranlib
+with --os=macosx ranlib
+with --os=win ld mt rc
+with --os=wince ld
+
+with --build --optional doxygen
+with --os=win --build --optional pkg
+
+###############################################################################
+#
+#   Feature Selection
+#
+
+#
+#   Turn assert checking on. Good for a debug build
+#
+BLD_FEATURE_ASSERT=1
+
+#
+#   Decimal (128 bit integer) support
+#
+BLD_FEATURE_DECIMAL=0
+
+#
+#   Documentation support
+#
+BLD_FEATURE_DOC=0
+
+#
+#   Floating point support
+#
+BLD_FEATURE_FLOATING_POINT=1
+
+#
+#   Enable the Legacy code for backward compatibility (back one major revision).
+#
+BLD_FEATURE_LEGACY_API=0
+
+#
+#   Compile multi-threaded
+#
+BLD_FEATURE_MULTITHREAD=1
+
+#
+#   Build the samples
+#
+BLD_FEATURE_SAMPLES=1
+
+#
+#   Build libraries as shared libraries or as static libraries
+#
+BLD_FEATURE_SHARED=1
+BLD_FEATURE_STATIC=0
+
+#
+#   Build the test suite
+#
+BLD_FEATURE_TEST=1
+
+################################################################################
+#
+#   Include settings common to all configurations
+#
+
+. ${BLD_TOP}/build/product.config
+

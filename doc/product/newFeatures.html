@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.we3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Embedthis EJScript New Features</title>
+<!-- BeginDsi "dsi/meta.html" -->
+
+
+	
+  <meta name="keywords" content="embedded web server, web server software, 
+		embedded HTTP, application web server, embedded server,
+		small web server, HTTP server, library web server, library HTTP,
+		HTTP library" />
+
+	
+  <meta name="description" content="Embedthis Sofware provides 
+		open source embedded web servers for devices and applications." />
+
+	
+  <meta name="robots" content="index,follow" />
+
+	
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<!-- EndDsi --><!-- BeginDsi "dsi/js.html" -->
+
+
+
+
+
+	
+  <script language="JavaScript" type="text/javascript">
+		document._ROOT_="../";
+	</script><!-- EndDsi --><!-- BeginDsi "dsi/style.html" -->
+
+
+
+
+
+	
+  <link href="../css/doc.css" rel="stylesheet" type="text/css" />
+<!-- EndDsi -->
+</head>
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+
+<!-- BeginDsi "dsi/navTop.html" -->
+	
+<div class="background">
+		
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+			<tbody>
+    <tr>
+
+				<td>
+					<a name="top"></a>
+					<img src="../images/backLeft.png" ismap="ismap" usemap="#home" border="0" height="93" width="400" /><br />
+
+					<map name="home">
+      <area coords="0,0,93,93" href="http://www.embedthis.com/index.html" />
+      </map>
+
+				</td>
+
+				<td width="100%">
+					<img src="../images/backMiddle.png" border="0" height="93" width="100%" /><br />
+
+				</td>
+
+				<td>
+					<img src="../images/backRight.png" border="0" height="93" width="354" /><br />
+
+				</td>
+
+			</tr>
+
+		
+  </tbody>
+</table>
+
+	</div>
+
+
+	
+<div class="navTop"> 
+		
+<table align="top" border="0" cellpadding="0" cellspacing="0">
+
+			<tbody>
+    <tr>
+
+				<td>
+				<!--TITLE-->Embedthis EJScript 1.0.0 Documentation
+				</td>
+      <td>
+				</td>
+      <td width="50">
+				</td>
+
+<!--
+				<td valign="bottom"> 
+					<form class="smallText" action="../../../search.php" 
+						method="post" name="searchForm" id="searchForm">
+					</form>
+					&nbsp; 
+					<input class="smallText" type="text" name="search" 
+						align="right" id="searchInput" size="17" maxlength="50"
+						value="No searching yet" />
+				</td>
+-->
+			</tr>
+
+		
+  </tbody>
+</table>
+
+	</div>
+
+<!-- EndDsi -->
+
+
+
+
+
+
+
+
+ 
+<div class="navHistory"> 
+<!-- BeginDsi "dsi/navHistory.html" -->
+
+	<a href="../product/index.html">Documentation Home</a> &gt; 
+<!-- EndDsi -->
+
+
+<span style="font-weight: bold; color: rgb(248, 248, 248);">New Features</span> </div>
+
+
+
+
+
+
+ 
+<table class="contentTable" border="0" height="100%">
+
+
+
+
+
+
+ 
+  <tbody>
+ 
+    <tr>
+ 
+      <td class="content"> 
+
+      <div class="guideHeader"> 
+        
+      <h1> 
+<!-- BeginDsi "dsi/backArrow.html" -->
+			<a href="../index.html"><img class="nav" src="../images/leftArrow.gif" height="14" width="19" /></a>
+<!-- EndDsi -->
+
+
+Embedthis BuildTools Features</h1>
+
+      </div>
+
+      <div class="guideSection">
+      
+      <h2><a name="200" id="200"></a><img src="../images/upArrow.gif" alt="up" height="16" width="16" /> New Features in 2.0.0</h2>
+
+      
+      <h3>Major Features </h3>
+
+      
+      <ul>
+
+      	<li>EJScript rewritten and greatly enhanced. Now supports:</li>
+
+      
+      </ul>
+
+      
+      <ul>
+
+        
+        <ul>
+
+          <li>Object type and the <span style="font-weight: bold;">new </span>reserved
+            word</li>
+
+          <li>Array type</li>
+
+          <li>Boolean type</li>
+
+          <li>Floating point</li>
+
+          <li>64 bit integer support</li>
+
+          <li>Automatic casting between types</li>
+
+          <li>Functions</li>
+
+          <li>for / in statement to iterate through arrays or objects</li>
+
+          <li>Extended standard procedure library: print, println, printVars,
+            trace</li>
+
+        
+        </ul>
+
+        <li>Reworked C APIs.      </li>
+
+      
+      </ul>
+
+      
+      <p><strong>Minor Features</strong></p>
+
+      
+      <ul>
+
+      	<li>Support for read-only builds. Helps for building a single source base
+      		with multiple targets. </li>
+
+      	
+      </ul>
+
+      
+      <p><strong>Fixes</strong></p>
+
+      
+      <ul>
+
+      	<li>Fixes to EJScript (Thanks Andrew Tridgell and
+      			the Samba team)</li>
+
+      	<li>Fix EJS diagnostic trace. Was truncating one character on trace lines. </li>
+
+      	<li>Fix MPR Var deep copy (Thanks Andrew)</li>
+
+      	<li>Fix for building EJS without floating point. (Thanks Nicolas Thill) </li>
+
+        <li>EJS: Add support for automatic casting to strings when types require
+          casting. </li>
+
+        <li>Fixed bugs in EJS for comparisions with non-boolean operands. Thanks
+          Martin Brochu. </li>
+
+        <li>Fix EJS issue with unary minus calculations.</li>
+
+        <li>Fix for EJS to not iterate over the length property for arrays in a for... in statement</li>
+
+        <li>Fix for EJS to allow "var" in a for (var .. statement</li>
+
+      <li>Fix for EJS syntax error when defining a for (.. in statement inside a function</li>
+
+        <li>Fix for EJS "var o = new Array;"</li>
+
+        <li>Fix for EJS testing variables against -1 </li>
+
+      </ul>
+
+      </div>
+
+      </td>
+ 
+      <td class="contentSep"><br />
+ </td>
+ 
+      <td class="contentSideBar"> 
+      <div class="linkSection"> 
+          
+      <h2>Quick Nav</h2>
+ 
+          <a href="#200">2.0.0</a><br />
+
+          
+      <h2>See Also</h2>
+
+          <a href="releaseNotes.html">Release Notes</a><br />
+ 
+          <a href="install/overview.html">Installation Overview</a><br />
+ 
+          <a href="roadmap.html">Roadmap</a><a href="../guide/ejs/source/porting.html"><br />
+ 
+          </a><br />
+ 
+        </div>
+      </td>
+ 
+    </tr>
+ 
+  
+  </tbody> 
+</table>
+
+<!-- BeginDsi "dsi/terms.html" -->
+<p class="terms"> 
+	<a href="../product/copyright.html">&copy; Embedthis Software LLC, 2003-2011. All 
+		rights reserved. Embedthis and EJScript are a trademarks of Embedthis Software LLC.</a>
+</p>
+
+<!-- EndDsi -->
+
+
+
+
+
+
+
+
+ 
+</body>
+</html>

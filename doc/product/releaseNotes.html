@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.we3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+  
+  
+
+	
+  <title>Embedthis EJScript Release Notes</title>
+<!-- BeginDsi "dsi/meta.html" -->
+  <meta name="keywords" content="embedded web server, web server software, 
+		embedded HTTP, application web server, embedded server,
+		small web server, HTTP server, library web server, library HTTP,
+		HTTP library" />
+
+	
+  <meta name="description" content="Embedthis Sofware provides 
+		open source embedded web servers for devices and applications." />
+
+	
+  <meta name="robots" content="index,follow" />
+
+	
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<!-- EndDsi --><!-- BeginDsi "dsi/js.html" -->
+
+
+
+
+	
+  <script language="JavaScript" type="text/javascript">
+		document._ROOT_="../";
+	</script><!-- EndDsi --><!-- BeginDsi "dsi/style.html" -->
+
+
+
+
+	
+  <link href="../css/doc.css" rel="stylesheet" type="text/css" />
+<!-- EndDsi -->
+</head>
+
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+
+<!-- BeginDsi "dsi/navTop.html" -->
+	
+<div class="background">
+		
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+			<tbody>
+    <tr>
+
+				<td>
+					<a name="top"></a>
+					<img src="../images/backLeft.png" ismap="ismap" usemap="#home" border="0" height="93" width="400" /><br />
+
+					<map name="home">
+      <area coords="0,0,93,93" href="http://www.embedthis.com/index.html" />
+      </map>
+
+				</td>
+
+				<td width="100%">
+					<img src="../images/backMiddle.png" border="0" height="93" width="100%" /><br />
+
+				</td>
+
+				<td>
+					<img src="../images/backRight.png" border="0" height="93" width="354" /><br />
+
+				</td>
+
+			</tr>
+
+		
+  </tbody>
+</table>
+
+	</div>
+
+
+	
+<div class="navTop"> 
+		
+<table align="top" border="0" cellpadding="0" cellspacing="0">
+
+			<tbody>
+    <tr>
+
+				<td>
+				<!--TITLE-->Embedthis EJScript 1.0.0 Documentation
+				</td>
+      <td>
+				</td>
+      <td width="50">
+				</td>
+
+<!--
+				<td valign="bottom"> 
+					<form class="smallText" action="../../../search.php" 
+						method="post" name="searchForm" id="searchForm">
+					</form>
+					&nbsp; 
+					<input class="smallText" type="text" name="search" 
+						align="right" id="searchInput" size="17" maxlength="50"
+						value="No searching yet" />
+				</td>
+-->
+			</tr>
+
+		
+  </tbody>
+</table>
+
+	</div>
+
+<!-- EndDsi -->
+
+
+
+<div class="navHistory"> 
+<!-- BeginDsi "dsi/navHistory.html" -->
+
+	<a href="../product/index.html">Documentation Home</a> &gt; 
+<!-- EndDsi -->
+
+	<span style="font-weight: bold; color: rgb(248, 248, 248);">Release Notes</span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="contentTable" border="0" height="100%">
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<tbody>
+    <tr>
+
+		<td class="content">
+			
+      <div class="guideHeader">
+				  
+      <h1>
+<!-- BeginDsi "dsi/leftArrow.html" -->
+			<a href="../index.html"><img src="../images/leftArrow.gif" class="nav" height="14" width="19" /></a>
+<!-- EndDsi -->
+
+Release Notes</h1>
+
+			</div>
+
+			
+      <div class="guideSection">
+				  
+      <h2>
+						<a href="#top"><img src="../images/upArrow.gif" class="nav" height="16" width="16" /></a><a name="releaseNotes"></a>Embedthis BuildTools Release Notes</h2>
+
+
+              
+      			
+      <p> Welcome to the Embedthis EJScript&trade; install distribution. This 
+					document provides release-specific information for  Embedthis EJScript.	</p>
+
+      			
+      <p>This release is the currently shipping stable version of
+Embedthis EJScript. The XXX release is the development branch where new
+features
+will be tested. If you are wanting to use EJScript in a production
+system, we suggest you use the stable release. </p>
+
+      			
+      <h2><a name="requirements"></a>
+
+			<a href="#top"><img src="../images/upArrow.gif" class="nav" height="16" width="16" /></a>
+
+System Requirements </h2>
+
+
+      
+      <h3> Operating System Support </h3>
+
+      
+      <ul>
+
+        <li>Linux 2.4 (x86)</li>
+        <li>Windows XP</li>
+        <li>Windows 2000 (x86)</li>
+
+      <li>VxWorks</li>
+
+      
+      </ul>
+
+              
+      
+      <h3>Development Environment Hardware Platform Support </h3>
+
+
+              
+      
+      <p>If you wish to build the samples or rebuild Embedthis EJScript from 
+                source code, you will need to use a C++ compiler and associated 
+                development tools. Several development environments are supported. 
+                You may choose any of the following to compile and build samples 
+                and source code.</p>
+
+
+              
+      			
+      <ul>
+
+					<li>Linux GNU tools</li>
+
+					<li>Windows Visual Studio (Visual Studio 6 and Visual Studio.NET
+2003). This requires the Cygwin UNIX emulation tools. See either
+www.cygwin.com or download the WinTools from <a href="http://www.embedthis.com/software/WinTools.zip%20">http://www.embedthis.com/software/WinTools.zip </a></li>
+
+			    
+      </ul>
+
+
+              
+      
+      <h3>Run-time System Requirements </h3>
+
+
+              
+      			
+      <p>To run Embedthis EJScript, your system will need at least the following 
+				</p>
+
+
+              
+      
+      <ul>
+
+        <li> 400 KB spare RAM memory </li>
+        <li>600 KB disk / ROM space</li>
+        <li>TCP/IP network stack</li>
+
+      
+      </ul>
+
+
+              
+      
+      <p>To develop applications that use Embedthis EJScript you will need 
+                an additional</p>
+
+
+              
+      
+      <ul>
+
+        <li>4 MB disk space</li>
+
+      
+      </ul>
+
+
+              
+      
+      <p>To rebuild EJScript from source code, you will need at least</p>
+
+
+              
+      
+      <ul>
+
+        <li>15 MB disk space</li>
+
+      
+      </ul>
+
+      </div>
+
+
+      <a name="features"></a>
+      <div class="guideSection">
+      
+      <h2><a href="#top"><img src="../images/upArrow.gif" class="nav" height="16" width="16" /></a>Features</h2>
+
+
+
+  This release includes support for the following features:<br />
+
+      
+      <ul>
+
+        <li>HTTP/1.0 and HTTP/1.1 compliant HTTP server</li>
+
+        <li>Apache style configuration</li>
+
+        <li>Embeddable in single and multithreaded applications</li>
+
+        <li>Embedded Server Pages (ESP)</li>
+
+        <li>EJScript (EJS)</li>
+
+        <li>Embedded Gateway Interface (EGI)</li>
+
+        <li>Common Gateway Interface (CGI)</li>
+
+        <li>PHP5</li>
+
+        <li>Digest and basic authentication</li>
+
+        <li>File Upload </li>
+
+        <li>Access and error logging streams</li>
+
+        <li>Secure Sockets Layer (SSL) via OpenSSL and MatrixSSL</li>
+
+        <li>Sandboxing environment for additional security</li>
+
+        <li>HTTP client</li>
+
+        <li>Extensible via dynamically loadable modules</li>
+
+        <li>Samples</li>
+
+        <li>Documentation</li>
+
+      
+      </ul>
+
+      
+      </div>
+
+
+      <a name="releaseBuild">
+      </a>
+      <div class="guideSection">
+      <h2><a href="#top"><img src="../images/upArrow.gif" class="nav" height="16" width="16" /></a>Release Build</h2>
+
+
+              
+      			
+      <p>This
+distribution is a RELEASE build and has little trace and or debug
+assertions to help find bugs. If you rebuild from source code, a DEBUG
+build will be created which has more trace to assist in debugging.
+Performance with the DEBUG build will be slower and the memory
+footprint will be larger than with the release build. </p>
+
+      </div>
+
+
+
+      <a name="hints">
+      </a>
+      <div class="guideSection">
+      <h2><a href="#top"><img src="../images/upArrow.gif" class="nav" height="16" width="16" /></a>
+
+Helpful Hints</h2>
+
+              
+      
+      <h4>Debug Trace and Logging</h4>
+
+
+              
+      
+      <p>EJScript has a debug logging and trace facility that can help greatly 
+                when debugging configuration issues or developing your application 
+                code that uses EJScript. You can see what modules are loaded and 
+                how, what requests arrive and how they are serviced. You can also 
+                vary the level of logging via the <b>EJScript.conf </b>configuration 
+                file or via the <b>-l logfile</b> command line switch. The log 
+                command line switch has the format</p>
+
+
+              
+      
+      <blockquote> 
+                
+        <p>-l logFile:logLevel</p>
+
+          </blockquote>
+
+
+              
+      			
+      <p>where level can be from 0 to 9, with 9 being the most verbose level. 
+					A level of 6 usually gives plenty of detail. You can define 
+					the log file and log level via the <b>EJScript.conf</b> file 
+					using the <b>ErrorLog </b>and <b>LogLevel</b> directives. 
+				</p>
+
+
+              
+      
+      </div>
+
+      <div class="guideSection">
+      
+      <h2>
+
+			<a href="#top"><img src="../images/upArrow.gif" class="nav" height="16" width="16" /></a>
+
+Limitations and Special Notes<a name="limitations"></a> </h2>
+
+
+              
+      
+      <ol>
+
+        
+        			<li>The
+file upload module is experimental and is subject to change. It is
+supplied as source but not compiled into the binary release.</li>
+        <li>An experimental PHP5 modules is included in the source distribution.<br />
+
+        </li>
+
+        <li>The Solaris port is incomplete and experimental.<br />
+
+        </li>
+
+
+
+      
+      </ol>
+
+
+              
+      
+
+              
+      
+      <h2>
+
+			<a href="#top"><img src="../images/upArrow.gif" class="nav" height="16" width="16" /></a>
+
+Resolved Issues<a name="resolvedIssues"></a></h2>
+
+              See the new features and fixes in the <a href="newFeatures.html">New Features</a> document. <br />
+
+          </div>
+      </td>
+
+		<td class="contentSep"><br />
+
+      </td>
+
+		<td class="contentSideBar"> 
+			
+      <div class="linkSection"> 
+				
+      <h2>Quick Nav</h2>
+
+					<a href="#releaseNotes">Release Notes</a><br />
+
+      <a href="#requirements">System Requirements</a><br />
+
+      <a href="#features">Features</a><br />
+      <a href="#releaseBuild">Release Build</a><br />
+
+					<a href="#hints">Helpful Hints</a><br />
+
+					<a href="#limitations">Limitations and Special Notes</a><br />
+
+					<a href="#resolvedIssues">Resolved Issues<br />
+
+      <br />
+
+      </a>
+				
+      <h2>See Also</h2>
+
+					<a href="newFeatures.html">New Features</a><br />
+
+					<a href="install/overview.html">Installation Overview</a><br />
+
+
+					<a href="../guide/ejs/source/building.html">Building Guide</a><br />
+
+					<a href="../guide/ejs/source/porting.html">Porting Guide</a><br />
+
+			</div>
+
+		</td>
+
+	</tr>
+
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<!-- BeginDsi "dsi/terms.html" -->
+<p class="terms"> 
+	<a href="../product/copyright.html">&copy; Embedthis Software LLC, 2003-2011. All 
+		rights reserved. Embedthis and EJScript are a trademarks of Embedthis Software LLC.</a>
+</p>
+
+<!-- EndDsi -->
+
+
+
+</body>
+</html>

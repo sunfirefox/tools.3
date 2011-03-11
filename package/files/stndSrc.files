@@ -1,0 +1,22 @@
+#
+#	stndSrc.files - Files needed for the source installation
+#
+#	Copyright (c) Embedthis Software LLC, 2003-2011. All Rights Reserved.
+#
+
+makeDir ${BLD_SRC_PREFIX}/build/bin ${BLD_SRC_PREFIX}/obj ${BLD_SRC_PREFIX}/bin ${BLD_SRC_PREFIX}/lib
+makeDir ${BLD_SRC_PREFIX}/releases/${BLD_PRODUCT}
+
+cpx -p *.TXT Makefile configure ${BLD_SRC_PREFIX}
+cpmod obj/Makefile lib/Makefile ${BLD_SRC_PREFIX}
+
+cpmod -d build Makefile configure.${BLD_PRODUCT} "*.defaults" "config/config.*" "${BLD_SRC_PREFIX}"
+
+cpmod -d build/make Makefile.top "make.*"  configure.${BLD_PRODUCT} *.defaults config/config.* "${BLD_SRC_PREFIX}"
+
+cpmod -m 0755 -d build/bin "config.*" bld makedep priv fakePriv mkdmg ${BLD_SRC_PREFIX}
+cpmod -d build/bin Makefile "make*Package*" makeInstall ${BLD_SRC_PREFIX}
+
+cpmod -d build/src Makefile "*.c" "*.h" ${BLD_SRC_PREFIX}
+
+cpmod -d package Makefile remove.sh "files/*.files" "packs/*.pack" ${BLD_SRC_PREFIX}

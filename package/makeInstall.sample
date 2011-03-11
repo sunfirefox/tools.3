@@ -1,0 +1,55 @@
+#
+#	makeInstall.sample - Called by makeInstall
+#
+#	Copyright (c) Embedthis Software LLC, 2003-2011. All Rights Reserved.
+#
+################################################################################
+#
+#	Configure a product
+#
+#	Usage:	configureProduct configure|initialize|install|remove|start|stop
+#
+
+configureProduct() {
+
+	local action sw quiet
+
+	quiet=0
+	while [ "${1#--}" != "$1" ] ; do
+		sw="${1#--}"
+		case $sw in
+		quiet)
+			quiet=1
+			;;
+		esac
+		shift
+	done
+
+	action=$1
+
+	case $action in
+	cleanup)
+		;;
+
+	configure)
+		;;
+
+	copy)
+		;;
+
+	initialize)
+		;;
+	
+	install)
+		;;
+
+	remove)
+		;;
+
+	start|stop)
+		;;
+
+	esac
+}
+
+################################################################################

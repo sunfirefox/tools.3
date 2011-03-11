@@ -1,0 +1,46 @@
+###############################################################################
+#
+#   configure.build -- Sample build configuration script for modules using the Embedthis build system.
+#
+#   Copyright (c) Embedthis Software LLC, 2003-2011. All Rights Reserved.
+#
+#   This script is included by configure and is never run stand-alone.
+#
+###############################################################################
+
+applyDependencies()
+{
+    :
+}
+
+
+manageFeatures()
+{
+    :
+}
+
+
+createFeatureConfig()
+{
+    :
+}
+
+
+help()
+{
+    cat <<!EOF_HELP
+
+Additional Features:
+  --disable-FEATURE        Do not include the FEATURE.
+  --enable-FEATURE         Include the FEATURE.
+
+Optional Modules:
+
+!EOF_HELP
+}
+
+
+parseArg()
+{
+    return 0
+}

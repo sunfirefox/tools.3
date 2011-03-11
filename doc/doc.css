@@ -1,0 +1,936 @@
+/*
+ *	Ejscript documentation style sheet. See http://www.ejscript.org.
+ */
+
+html {
+	min-width: 700px;
+	background-color: #20344D;
+}
+
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: small;
+}
+
+
+/*
+ * 	Top banner section
+ */
+div.background {
+	background-image: url(images/shadow.jpg);
+	background-position: left top;
+	background-repeat: repeat-y;
+}
+
+div.top {
+	height: 125px;
+	width: 900px;
+	margin-left: 40px;
+	background-image: url("images/banner.jpg");
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+div.bottomBackground {
+	background-image: url(images/bottomShadow.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+div.home {
+	position: absolute;
+	top: inherit;
+	left: inherit;
+	height: 50px;
+	width: 200px;
+}
+
+div.home a {
+	height: 50px;
+	width: 200px;
+	padding: 50px 90px 50px 90px;
+	text-decoration: none;
+}
+
+/*
+ * 	Search and version
+ */
+div.topRight {
+	float: right;
+	padding: 18px 20px 0 0;
+	font-size: 110%;
+	text-align: right;
+	color: #000000; 
+}
+
+div.search {
+	padding: 4px 0px 24px 0;
+}
+
+div.search input {
+	text-align: right;
+}
+div.search label {
+	vertical-align: middle;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
+div.search form {
+	margin: 0;
+	padding: 0;
+}
+
+div.search form #q, div.search form #q {
+	background: #EEEEEE;
+}
+
+div.search form #q:hover, div.search form #q:focus {
+	background: #FFFFFF;
+}
+
+
+/*
+ *	Navigation history line (crumbs)
+ */
+div.navHistory { 
+	float: left;
+	margin: 74px 0 0 20px;
+	color: #FFFFFF; 
+	text-decoration: none;
+}
+
+div.navHistory a:link, div.navHistory a:visited { 
+	color: #EEEEFF; 
+	text-decoration: none;
+}
+
+div.navHistory a:hover { 
+	text-decoration: underline; 
+	color: #FFFFFF;
+}
+
+
+/*
+ *	Body content
+ */
+div.content {
+	width: 850px;
+	margin: -30px 0 0 40px;
+	padding: 0 10px 20px 40px;
+	color: #102070; 
+	color: #000000;
+	background-color: #FFFFFF;
+	min-height: 600px;
+	text-decoration: none;
+}
+
+
+div.contentLeft {
+	width: 33%;
+	float: left;
+	padding-right: 10px;
+}
+
+/*
+ *	Content spanning left and middle
+ */ 	
+div.contentLeftMiddle {
+	width: 70%;
+	margin: 0;
+	padding: 0 20px 0 0;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	min-height: 600px;
+	/* Fix for IE */
+	display: inline
+}
+
+div.contentRight { 
+	width: 25%;
+	float: right;
+	margin: 0;
+	padding: 0 10px 0 20px;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	min-height: 200px;
+}
+
+div.contentHomeRight { 
+	width: 31%;
+}
+
+div.content h1 {
+	color: #102070; 
+	color: #284898; 
+	font-size: 150%;
+	padding: 20px 0 10px 0;
+	margin: 0;
+}
+
+
+div.content h2 {
+	color: #102070; 
+	color: #284898; 
+	font-size: 120%;
+	padding: 20px 0 10px 0;
+	margin: 0;
+}
+
+
+a.back {
+	margin-left: -15;
+}
+
+ul.bare {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+div.content h2 a {
+	color: #000000;
+	color: #102070; 
+	color: #284898; 
+	text-decoration: none; 
+}
+
+div.content a {
+	color: #102070; 
+	color: #000000;
+	color: #284898; 
+	text-decoration: none; 
+}
+
+div.content a:hover { 
+	color: #CC4477; 
+	text-decoration: underline; 
+}
+
+div.content ul li {
+	font-size: 100%;
+	line-height: 140%; 
+	margin: 0;
+}
+
+div.content ol li {
+	font-size: 100%;
+	line-height: 140%; 
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+
+
+/*
+ * 	Generic styles
+ */
+p { 
+	line-height: 130%; 
+	margin-bottom: 5px;
+}
+
+h1 { 
+	font-size: large;
+	font-weight: bold;
+} 
+
+h2 { 
+	font-size: large;
+	font-weight: bold;
+}
+
+h3 { 
+	font-size: medium;
+	font-weight: bold;
+}
+
+h4 { 
+	font-size: small;
+	font-weight: bold; 
+	font-style: italic; 
+}
+
+hr {
+	xmargin: 28px 0px 18px 0px;
+	margin: 0 0 0 0;
+	border-style: none;
+	border: 0;
+	height: 0px;
+	width: 0px;
+}
+
+ul { 
+	font-size: 100%;
+}
+
+ol {  
+	font-size: 100%;
+}
+
+pre { 
+	font-size: 110%;
+	line-height: 140%; 
+	font-family: Courier New, Courier, monospace; 
+	padding: 10px 15px 10px 15px;
+	margin: 16px 0 10px 0;
+	background-color: #20344D;
+	color: #FFFFFF;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-webkit-box-shadow: 5px 5px 9px #888;
+}
+
+pre a {
+	color: #FFFFFF;
+}
+
+pre a:link, pre a:visited, pre a:hover {
+	color: #FFFFFF;
+}
+
+pre.paper { 
+	font-size: 140%;
+	line-height: 140%; 
+	font-family: Courier New, Courier, monospace; 
+	padding: 10px 15px 10px 15px;
+	margin: 10px 0 10px 0;
+	background-color: #FFFFFF;
+	color: #284898; 
+	color: #000000; 
+	color: #102070; 
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-webkit-box-shadow: 0px 0px 0px #FFF;
+}
+
+code {
+	font-size: 120%;
+}
+
+
+table {
+	margin: 10px 0 20px 0;
+	font-size: 100%;
+	border: 1px solid #AAAAAA;
+	border-collapse: collapse;
+	padding: 14;
+	-webkit-box-shadow: 5px 5px 9px #888;
+}
+
+thead {
+	background-color: #80A0D0;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+td {
+	border: 1px solid #AAAAAA;
+	padding: 4px;
+}
+
+.section {
+	padding: 10px 0 2px 0;
+	border-bottom: 1px solid #A0A0A0
+}
+
+p.finePrint { 
+	font-size: 80%;
+	color: #313131; 
+}
+
+a:link { 
+	color: #284898; 
+	text-decoration: none; 
+}
+
+a:visited { 
+	color: #000000;
+	text-decoration: none; 
+}
+
+a:hover { 
+	color: #CC4477; 
+}
+
+/*
+ *	Faq styles
+ */
+p.faqLink {
+	color: #31699C; 
+	text-decoration: none; 
+	margin: 4px 0px 0px 20px;
+	padding: 0px 0px 0px 0px;
+	line-height: 110%; 
+}
+
+p.faqLink a:link, p.faqLink a:visited {
+	color: #31699C; 
+	text-decoration: none; 
+}
+
+p.faqLink a:hover {
+	color: #993366; 
+	text-decoration: underline; 
+}
+
+p.faqQuestion {
+	font-size: 100%;
+	color: #CC4477; 
+	margin: 10px 0px 0px 0px;
+	font-style: italic;
+}
+
+p.faqAnswer {
+	font-size: 100%;
+	margin: 4px 0px 20px 0px;
+}
+
+
+/*
+ *	Terms 
+ */
+p.terms {
+	height: 50px;
+	margin: 0;
+	padding: 30px 0 0 0;
+	font-size: 85%;
+	color: #AAAAAA; 
+	line-height: 70%; 
+}
+
+p.terms a:link, p.terms a:visited { 
+	color: #AAAAAA; 
+	text-decoration: none;
+}
+
+p.terms a:hover { 
+	color: #FFFFFF; 
+}
+
+
+/*
+ *	Quick Nav
+ */
+div.linkSection {
+	font-size: 100%;
+	line-height: 145%;
+}
+
+div.linkSection h2 {
+	background-color: #EEEEEE; 
+	font-size: 100%;
+	position: relative; 
+	left: -11px;
+	margin: 20px 0 2px 0px;
+	padding: 3px 4px 1px 10px;
+	color: #000000;
+	color: #102070; 
+	color: #284898; 
+}
+
+div.linkSection ul {
+	padding: 0;
+	margin: 0;
+	color: #102070; 
+	color: #000000;
+}
+
+div.linkSection li {
+	padding: 0;
+	margin: 0;
+	font-size: 90%;
+	list-style-type: none;
+	padding-bottom: 0;
+	color: #102070; 
+	color: #000000;
+}
+
+div.linkSection a:link, div.linkSection a:visited { 
+	color: #102070; 
+	color: #000000;
+	color: #284898; 
+	text-decoration: none;
+}
+
+div.linkSection a:hover { 
+	color: #CC4477; 
+	text-decoration: underline; 
+}
+
+
+/*
+ *	Guide sections
+ */
+div.guideSection {
+	margin: 0 0 0 0;
+	padding: 0 40px 20px 0;
+	line-height: 130%;
+}
+
+h1.guideHeader { 
+	font-size: 160%;
+	font-weight: bold;
+	color: #284898; 
+	position: relative; 
+	left: -10px;
+} 
+
+div.guideSection h2 {
+	font-size: 120%;
+	font-weight: bold;
+	color: #284898; 
+	margin: 28px 0 6px 0;
+	padding: 0 0 3px 0;
+	border-bottom: 1px solid #20344D;
+}
+
+div.guideSection h3 {
+	font-size: 100%;
+	font-weight: bold;
+	color: #284898; 
+	margin: 18px 0 0px 0;
+}
+
+div.guideSection h4 {
+	font-size: 100%;
+	font-style: italic;
+	font-weight: italic;
+	color: #284898; 
+}
+
+div.guideSection a:link, div.guideSection a:visited { 
+	text-decoration: none;
+	color: #284898; 
+}
+
+div.guideSection a:hover { 
+	color: #CC4477; 
+	text-decoration: underline; 
+}
+
+div.guideSection pre a:link, div.guideSection pre a:visited, div.guideSection pre a:hover {
+	color: #FFFFFF;
+}
+
+
+/*
+ *	API sections
+ */
+div.apiSection {
+	padding: 0px 0px 0px 16px;
+}
+
+div.apiSection h1 {
+	font-size: 140%;
+	margin: 0 0 3pt 0;
+	position: relative; 
+	left: -16px;
+}
+
+div.apiSection h2 {
+	font-size: 100%;
+	margin: 8pt 0 3pt 0;
+	position: relative; 
+	left: -16px;
+}
+
+div.apiSection a:link, div.apiSection a:visited { 
+	xcolor: #21409C; 
+	text-decoration: none;
+}
+
+div.apiSection a:hover { 
+	color: #CC4477; 
+	text-decoration: underline; 
+}
+
+div.apiSection p {
+	margin: 0;
+	padding: 0;
+	line-height: 130%; 
+}
+
+div.navtab {
+	display: none;
+}
+	
+
+/*
+ *	Doxygen styles
+ */
+CAPTION { font-weight: bold }
+
+DIV.nav {
+	width: 100%;
+	background-color: #e8eef2;
+	border: 1px solid #84b0c7;
+	text-align: center;
+	margin: 2px;
+	padding: 2px;
+	line-height: 140%;
+}
+
+DIV.navtab {
+       background-color: #e8eef2;
+       border: 1px solid #84b0c7;
+       text-align: center;
+       margin: 2px;
+       margin-right: 15px;
+       padding: 2px;
+}
+
+TD.navtab {
+       font-size: 70%;
+}
+
+DIV.qindex {
+	width: 100%;
+	xbackground-color: #e8eef2;
+	xborder: 1px solid #84b0c7;
+	xtext-align: center;
+	margin: 0px;
+	padding: 8px 0 12px 0;
+	line-height: 140%;
+}
+
+A.qindex {
+	text-decoration: none;
+	font-weight: bold;
+	color: #1A419D;
+}
+
+A.qindex:visited {
+	text-decoration: none;
+	font-weight: bold;
+	color: #1A419D
+}
+
+A.qindex:hover {
+	text-decoration: none;
+	xbackground-color: #ddddff;
+}
+
+A.qindexHL:visited { text-decoration: none; background-color: #6666cc; color: #ffffff }
+A.el { text-decoration: none; font-weight: normal }
+A.elRef { font-weight: bold }
+A.code:link { text-decoration: none; font-weight: normal; color: #0000FF}
+A.code:visited { text-decoration: none; font-weight: normal; color: #0000FF}
+A.codeRef:link { font-weight: normal; color: #0000FF}
+A.codeRef:visited { font-weight: normal; color: #0000FF}
+A:hover { text-decoration: none; xbackground-color: #f2f2ff }
+DL.el { margin-left: -1cm }
+.fragment {
+       font-family: monospace, fixed;
+       font-size: 95%;
+}
+PRE.fragment {
+	border: 1px solid #CCCCCC;
+	background-color: #f5f5f5;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-left: 2px;
+	margin-right: 8px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+DIV.ah { background-color: black; font-weight: bold; color: #ffffff; margin-bottom: 3px; margin-top: 3px }
+
+DIV.groupHeader {
+       margin-left: 16px;
+       margin-top: 12px;
+       margin-bottom: 6px;
+       font-weight: bold;
+}
+DIV.groupText { margin-left: 16px; font-style: italic; font-size: 90% }
+
+TD.indexkey {
+	background-color: #e8eef2;
+	font-weight: bold;
+	padding-right  : 10px;
+	padding-top    : 2px;
+	padding-left   : 10px;
+	padding-bottom : 2px;
+	margin-left    : 0px;
+	margin-right   : 0px;
+	margin-top     : 2px;
+	margin-bottom  : 2px;
+	border: 1px solid #CCCCCC;
+}
+
+TD.indexvalue {
+	background-color: #e8eef2;
+	font-style: italic;
+	padding-right  : 10px;
+	padding-top    : 2px;
+	padding-left   : 10px;
+	padding-bottom : 2px;
+	margin-left    : 0px;
+	margin-right   : 0px;
+	margin-top     : 2px;
+	margin-bottom  : 2px;
+	border: 1px solid #CCCCCC;
+}
+
+TR.memlist {
+   background-color: #f0f0f0; 
+}
+
+P.formulaDsp { text-align: center; }
+
+IMG.formulaDsp { }
+
+IMG.formulaInl { vertical-align: middle; }
+
+SPAN.keyword       { color: #008000 }
+SPAN.keywordtype   { color: #604020 }
+SPAN.keywordflow   { color: #e08000 }
+SPAN.comment       { color: #800000 }
+SPAN.preprocessor  { color: #806020 }
+SPAN.stringliteral { color: #002080 }
+SPAN.charliteral   { color: #008080 }
+
+.mdescLeft {
+       padding: 0px 8px 4px 8px;
+	font-size: 90%;
+	font-style: italic;
+	background-color: #FAFAFA;
+	border-top: 1px none #E0E0E0;
+	border-right: 1px none #E0E0E0;
+	border-bottom: 1px none #E0E0E0;
+	border-left: 1px none #E0E0E0;
+	margin: 0px;
+}
+
+.mdescRight {
+       padding: 0px 8px 4px 8px;
+	font-size: 90%;
+	font-style: italic;
+	background-color: #FAFAFA;
+	border-top: 1px none #E0E0E0;
+	border-right: 1px none #E0E0E0;
+	border-bottom: 1px none #E0E0E0;
+	border-left: 1px none #E0E0E0;
+	margin: 0px;
+}
+
+.memItemLeft {
+	padding: 1px 0px 0px 8px;
+	margin: 4px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #E0E0E0;
+	border-right-color: #E0E0E0;
+	border-bottom-color: #E0E0E0;
+	border-left-color: #E0E0E0;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-color: #FAFAFA;
+	font-size: 90%;
+}
+
+.memItemRight {
+	padding: 1px 8px 0px 8px;
+	margin: 4px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #E0E0E0;
+	border-right-color: #E0E0E0;
+	border-bottom-color: #E0E0E0;
+	border-left-color: #E0E0E0;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-color: #FAFAFA;
+	font-size: 90%;
+}
+
+.memTemplItemLeft {
+	padding: 1px 0px 0px 8px;
+	margin: 4px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #E0E0E0;
+	border-right-color: #E0E0E0;
+	border-bottom-color: #E0E0E0;
+	border-left-color: #E0E0E0;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-color: #FAFAFA;
+	font-size: 90%;
+}
+
+.memTemplItemRight {
+	padding: 1px 8px 0px 8px;
+	margin: 4px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #E0E0E0;
+	border-right-color: #E0E0E0;
+	border-bottom-color: #E0E0E0;
+	border-left-color: #E0E0E0;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-color: #FAFAFA;
+	font-size: 90%;
+}
+
+.memTemplParams {
+	padding: 1px 0px 0px 8px;
+	margin: 4px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #E0E0E0;
+	border-right-color: #E0E0E0;
+	border-bottom-color: #E0E0E0;
+	border-left-color: #E0E0E0;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+       color: #606060;
+	background-color: #FAFAFA;
+	font-size: 90%;
+}
+
+.search     { color: #003399;
+              font-weight: bold;
+}
+
+FORM.search {
+              margin-bottom: 0px;
+              margin-top: 0px;
+}
+
+INPUT.search { font-size: 75%;
+               color: #000080;
+               font-weight: normal;
+               background-color: #e8eef2;
+}
+
+TD.tiny      { font-size: 75%;
+}
+
+.dirtab { padding: 4px;
+          border-collapse: collapse;
+          border: 1px solid #84b0c7;
+}
+TH.dirtab { background: #e8eef2;
+            font-weight: bold;
+}
+HR { height: 1px;
+     border: none;
+     border-top: 1px solid black;
+}
+
+/* Style for detailed member documentation */
+.memtemplate {
+  font-size: 90%;
+  color: #606060;
+  font-weight: normal;
+} 
+
+.memnav { 
+  background-color: #e8eef2;
+  border: 1px solid #84b0c7;
+  text-align: center;
+  margin: 2px;
+  margin-right: 15px;
+  padding: 2px;
+}
+
+div.memitem {
+	padding: 14px 14px;
+	margin: 30px 0px 20px 0px;
+	background-color: #eef3f5;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #dedeee;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 7px;
+	-webkit-box-shadow: 5px 5px 9px #888;
+	font-size: 90%;
+}
+
+dd table {
+	margin: 10px 20px 10px 0;
+	font-size: 100%;
+	padding: 14;
+}
+
+dd table td {
+	border-style: none;
+}
+
+table.memname {
+	margin: 4px 4px 4px 4px;
+	background-color: #d5e1e8;
+	font-size: 100%;
+	border-style: none;
+	padding: 14;
+}
+
+table.memname td {
+	border-style: none;
+	padding: 4px;
+}
+
+.memname {
+  xwhite-space: nowrap;
+  font-weight: bold;
+}
+
+.memdoc{
+  padding-left: 10px;
+}
+
+.paramkey {
+  text-align: right;
+}
+
+.paramtype {
+  white-space: nowrap;
+}
+
+.paramname {
+  color: #602020;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+/* End Styling for detailed member documentation */
+
+/* for the tree view */
+.ftvtree {
+	font-family: sans-serif;
+	margin:0.5em;
+}
+
+.directory { font-size: 9pt; font-weight: bold; }
+.directory h3 { margin: 0px; margin-top: 1em; font-size: 11pt; }
+.directory > h3 { margin-top: 0; }
+.directory p { margin: 0px; white-space: nowrap; }
+.directory div { display: none; margin: 0px; }
+.directory img { vertical-align: -30%; }

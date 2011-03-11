@@ -1,0 +1,52 @@
+#
+# doc.files - Copy documentation files for the doc install.
+#
+# Copyright (c) Embedthis LLC, 2003-2011. All Rights Reserved.
+#
+
+# NOTE: Usage: cpmod src dest [perm] [owner.group]
+
+if [ $PACKNAME = doc ]
+then
+	#
+	#	Copy doc files
+	#
+	SrcD=${BLD_TOP}/doc
+	DestD=${BLD_DOC_PREFIX}/doc
+	makeDir "${DestD}"
+
+	cat ${SrcD}/file.list | while read f
+	do
+		cpmod "${SrcD}/$f" "${DestD}/$f"
+	done
+
+	patchFile "${BLD_DOC_PREFIX}/doc/product/${BLD_PRODUCT}/release/index.html"
+	patchFile "${BLD_DOC_PREFIX}/doc/product/${BLD_PRODUCT}/release/releaseNotes.html"
+fi
+
+if [ $PACKNAME = src ]
+then
+	#
+	#	Copy doc files again into the source tree
+	#
+	SrcD=${BLD_TOP}/doc
+	DestD=${BLD_SRC_PREFIX}/doc
+	makeDir "${DestD}"
+	cpmod "${SrcD}/file.list"
+
+	cat ${SrcD}/file.list | while read f
+	do
+		cpmod "${SrcD}/$f" "${DestD}/$f"
+	done
+
+	patchFile "${BLD_SRC_PREFIX}/doc/product/${BLD_PRODUCT}/release/index.html"
+	patchFile "${BLD_SRC_PREFIX}/doc/product/${BLD_PRODUCT}/release/releaseNotes.html"
+
+	#
+	#	Copy the package files
+	#
+	SrcD=${BLD_TOP}/doc/package
+	DestD=${BLD_SRC_PREFIX}/doc/package
+	makeDir "${DestD}"
+	cpmod "${SrcD}/doc.files"
+fi
