@@ -1,3 +1,0 @@
-export PATH=".:/Users/mob/git/ejs.stable/out/bin:/Users/mob/git/ejs.stable/bin:/Users/mob/git/ejs.stable/build/bin:.:/Users/mob/git/ejs/out/bin:/Users/mob/git/ejs/bin:/Users/mob/git/ejs/build/bin:.:/Users/mob/git/appweb/out/bin:/Users/mob/git/appweb/bin:/Users/mob/git/appweb/build/bin:.:/Users/mob/git/mpr/out/bin:/Users/mob/git/mpr/bin:/Users/mob/git/mpr/build/bin:/usr/local/bin:/opt/local/bin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/src/ec2-api-tools-1.3-42584/bin:/usr/src/ec2-ami-tools-1.3-34544/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
-
-./configure 
