@@ -98,12 +98,12 @@ function sh(args): String {
 function testCmdNoCapture(args): Boolean {
     test.log(2, "[Test]", "Run test: " + args)
     try {
-        args = args.toString().toJSON().trim('"')
-        Cmd.runx(("/bin/sh -c \"" + env() + args + "\"").trim('\n'), data)
+        let sh = Cmd.locate("sh")
+        Cmd.runx((sh + " -c \"" + env() + args + "\"").trim('\n'), data)
         assert(true)
         return true
     } catch (e) {
-        assert(false)
+        assert(false, e)
         return false
     }
 }
@@ -111,12 +111,12 @@ function testCmdNoCapture(args): Boolean {
 function testCmd(args): Boolean {
     test.log(2, "[Test]", "Run test: " + args)
     try {
-        args = args.toString().toJSON().trim('"')
-        Cmd.run(("/bin/sh -c \"" + env() + args + "\"").trim('\n'), data)
+        let sh = Cmd.locate("sh")
+        Cmd.run((sh + " -c \"" + env() + args + "\"").trim('\n'), data)
         assert(true)
         return true
     } catch (e) {
-        assert(false)
+        assert(false, e)
         return false
     }
 }
