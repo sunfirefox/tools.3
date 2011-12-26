@@ -1,7 +1,7 @@
 #
 #	stndSrc.files - Files needed for the source installation
 #
-#	Copyright (c) Embedthis Software LLC, 2003-2011. All Rights Reserved.
+#	Copyright (c) Embedthis Software LLC, 2003-2012. All Rights Reserved.
 #
 
 makeDir ${BLD_SRC_PREFIX}/build/bin ${BLD_SRC_PREFIX}/obj ${BLD_SRC_PREFIX}/bin ${BLD_SRC_PREFIX}/lib
